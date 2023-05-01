@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jude moon">
+    <title>Visualización de datos del Titanic</title>
+
+    <!-- load d3 and dimple libraries -->
+    <script src="http://d3js.org/d3.v4.min.js"></script>
+    <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
+
+    <!-- add styles to text and graphics -->
+    <style>
+        h1 {
+            background-color: black;
+            color: floralwhite;
+            font-family: Helvetica, sans-serif;
+            width: 100%;
+            height: 80px;
+            text-align: center;
+            padding-top: 30px;
+        }
+        h2 {
+            background-color: black;
+            font-size: 1.2em;   
+            width: 100%;         
+            height: 50px;
+            text-align: center;
+            padding-top: 30px;
+            font-family: Helvetica;
+            color: floralwhite;
+            margin-top: 0;
+        }
+        h3 {
+            font-family: Helvetica, sans-serif;
+            text-align: center;
+        }
+        h4 {
+            font-family: Helvetica, sans-serif;
+            text-align: left;
+        }
+        div.text {
+            font-family: Helvetica;
+            padding: 5px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+  <h1 class="main-title">Trabajo Práctico Visualización de Datos </h1>
+  <h4 class="main-autor">Nombre: Maicol Andres Ardila Amado</h3>
+  <h4 class="main-fecha">Fecha: 1/5/2023</h4>
+  <h4 class="main-url">Url: <a href="https://js-qv7x2d.stackblitz.io">https://js-qv7x2d.stackblitz.io</a></h3>
+  <h2 class="main-title">Producción de Recursos Naturales por Región en Colombia </h2>
+  
+  <div class="summary">
+    <h3 class="text-title">Resumen</h3>
+    <div class="text">
+      El objetivo es poder identificar que recursos naturales son los más producidos en Colombia y en que región se centra esta producción.<br><br />
+
+      Esto derivado de que en Colombia muchas de las grandes productoras abusan de la cantidad de recursos naturales que se utilizan y se venden, por lo cual, se debe tener un control de estas, especialmente del sector minero, ya que las actividades que se realizan aquí tienen un gran impacto ambiental.<br><br>
+          <div class="metadato  " >
+            Como publico objetivo se tiene a todos los representantes de las empresas que producen este tipo de recursos, en especial el sector minero de Colombia. Con esto en mente, se pensó en gráficos de fácil comprensión visual y una herramienta que facilite el mostrar esta información.
+          </div>     
+    </div>
+  </div>
+<h3 class="plot-title">Mapa Producción por Región</h3>
+
+Se utiliza el grafico de mapa ya que este da una gran vision y entendimiento de la variable geografica la cual es una de las mas importantes dentro del analisis, por otro lado se tiene el grafico de barras horizontal debido a su facilidad para poder observar cual recurso natural es el que mas se produce a nivel nacional.<br /><br />
+
+Con el gráfico de barras horizontales se pueden filtrar los recursos naturales que se quieren ver, ya que son demasiados y esto sesga el color y tamaño de las burbujas por cada región.<br /><br />
+      
+Se escogió PowerBI como herramienta es debido a la gran interactividad que provee esta herramienta a los usuarios.<br /><br />
+
+<iframe title="Grafica Mapa" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=047fcea2-1fe4-4fb5-b39c-0c2dd482cdfb&autoAuth=true&ctid=02674ef9-5c2c-47d0-b2bc-595a784dda00" frameborder="0" allowFullScreen="true"></iframe><br /><br />
+
+En el grafico de barras horizontales se puede observar que a nivel nacional el recurso que mas se produce es el oro luego el carbon, la plata y el platino. En este orden de ideas se puede ver un gran impacto de la mineria en el pais.
+
+Por otro lado, el mapa nos muestra que la mayor cantidad de recursos se produce cerca a Bello, Quibdó y el Cesar. Por lo que valdría la pena hacer un foco en estas regiones para estudiar la forma en que se están produciendo estos recursos
+
+  <h4 class="main-fuente"><ol>Fuente de los datos: <br><br />
+
+    <li><a href="https://www.datos.gov.co/Minas-y-Energ-a/Hist-rico-producci-n-de-minerales-pertenecientes-a/bsxn-zbdw" target="_blank">
+  
+    https://www.datos.gov.co/Minas-y-Energ-a/Hist-rico-producci-n-de-minerales-pertenecientes-a/bsxn-zbdw
+  
+  </a><br /></li>
+  
+  <li><a href="https://geoportal.dane.gov.co/servicios/descarga-y-metadatos/datos-geoestadisticos/?cod=112" target="_blank">
+  
+    https://geoportal.dane.gov.co/servicios/descarga-y-metadatos/datos-geoestadisticos/?cod=112
+  
+  </a></li>
+  </ol></h4>
+  
+  <br>
+  <br>
+
+  <h2 class="main-title">Estabilidad de Inversores Solares (Tema TFM) </h2>
+  <div class="summary">
+    <h3 class="text-title">Resumen</h3>
+    <div class="text">
+      La empresa BIA Analytics se encarga de estudiar datos sobre el sector de la energía, en este caso específico se quiere estudiar un conjunto de inversores solares los cuales se ven afectados por muchos factores, como por ejemplo nubes que generan caídas exageradas de la data, días 
+      soleados que generan picos en la data, potencia o batería de los inversores durante el día etc.<br><br />
+      El objetivo principal del TFM es poder crear una inteligencia artificial (IA) que identifique y detecte patrones específicos, por ejemplo, el cliente proporciona un patrón que para él es extraño y la IA debe estar en la capacidad de dar como respuesta un conjunto de intervalos de tiempo en los cuales se presentaron comportamientos similares.
+      <br><br />
+      Para iniciar con este trabajo, BIA Analytics proporciono un conjunto de datos pequeño, en el cual solo se considera una de las variables, la potencia de los inversores; el objetivo para este pequeño caso es hacer un estudio estadístico de la serie de tiempo, como por ejemplo outliers, el comportamiento general de la serie y la distribución de la misma.
+      <br><br />
+      
+          <div class="metadato  " >
+            En este ejercicio específico la audiencia son dos personas, el director del TFM y el representante de la empresa BIA Analytics, los cuales tienen un gran conocimiento estadístico y analítico, por lo que las gráficas que se escogerán irán acordes a este perfil.
+          </div>     
+    </div>
+  </div>
+<h3 class="plot-title">PRIMER GRAFICO</h3>
+
+<h4 class="main-fuente">Fuente de los datos: <br><br /></h4>
+
+La data fue suministrada por la empresa que requiere el desarrollo del TFM, estos datos son obtenidos por cada uno de los inversores solares que tiene el cliente de la empresa.
+
+</body>
