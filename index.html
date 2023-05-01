@@ -112,12 +112,27 @@ Por otro lado, el mapa nos muestra que la mayor cantidad de recursos se produce 
       
           <div class="metadato  " >
             En este ejercicio específico la audiencia son dos personas, el director del TFM y el representante de la empresa BIA Analytics, los cuales tienen un gran conocimiento estadístico y analítico, por lo que las gráficas que se escogerán irán acordes a este perfil.
-          </div>     
+          </div>    
+      <br>
+      En este caso se escogió la herramienta Python, ya que permite una lectura sencilla del conjunto de datos que no es pequeño, tiene aproximadamente 800.000 registros. Por otro lado, también se tuvo en cuenta la formalidad que tiene la herramienta en el ámbito analítico. 
     </div>
   </div>
-<h3 class="plot-title">PRIMER GRAFICO</h3>
 
-<h4 class="main-fuente">Fuente de los datos: <br><br /></h4>
+<h3 class="plot-title">Distribución Potencia del Inversor</h3>
+<img src="https://user-images.githubusercontent.com/128309088/
+235486738-da4f00af-7738-44b2-b632-e3503cae63f6.png">
+Se escogió un histograma, ya que con este gráfico se puede ver de forma inicial la forma en la cual se distribuyen los datos; se observa que los datos tienen un gran sesgo a la derecha, lo cual significa que la mayoría del tiempo el inversor tuvo una potencia baja y puede que hayan algunos datos outliers dentro de la data.
+<h3 class="plot-title">BoxPlot Potencia del Inversor</h3>
+<img src="https://user-images.githubusercontent.com/128309088/235487927-e6ec3c6a-3095-4eea-8169-df16372119f3.png">
+Para validar la hipotesis anterior sobre los outliers se realiza un BoxPlot el cual tiene la caracteritica de mostrar los puntos considerados outliers dentro de la distribucion.
+<br><br />
+En el gráfico se observa que a pesar de tener un cúmulo de datos en valores bajos, los valores altos no alcanzan a ser outliers, por lo que la data no tiene outliers y todos los puntos tienen una distribución esperada.
+<h3 class="plot-title">Serie (Minutal) Potencia del Inversor</h3>
+<img src="https://user-images.githubusercontent.com/128309088/235488346-33107c9e-4bc0-44b0-8a3f-71e47765710d.png">
+La data que se tiene esta medida minutalmente, es decir, cada instancia del DataSet representa una medición de la potencia del inversor minuto a minuto, por lo que el gráfico de serie inicialmente no se ve muy bien, pero a pesar de esto en él se puede observar que la potencia tiene caídas grandes repentinas y luego subidas, lo cual es un comportamiento extraño que se debe estudiar más a fondo.
+<br><br />
+
+<h4 class="main-fuente">Fuente de los datos: </h4>
 
 La data fue suministrada por la empresa que requiere el desarrollo del TFM, estos datos son obtenidos por cada uno de los inversores solares que tiene el cliente de la empresa.
 
