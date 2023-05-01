@@ -54,6 +54,7 @@
   <h4 class="main-autor">Nombre: Maicol Andres Ardila Amado</h3>
   <h4 class="main-fecha">Fecha: 1/5/2023</h4>
   <h4 class="main-url">Url: <a href="https://js-qv7x2d.stackblitz.io">https://js-qv7x2d.stackblitz.io</a></h3>
+  <h4 class="main-url">GitHub: <a href="https://github.com/Maicol54/Visualizacion---Trabajo-Practico">https://github.com/Maicol54/Visualizacion---Trabajo-Practico</a></h3>
   <h2 class="main-title">Producción de Recursos Naturales por Región en Colombia </h2>
   
   <div class="summary">
@@ -123,15 +124,24 @@ Por otro lado, el mapa nos muestra que la mayor cantidad de recursos se produce 
 235486738-da4f00af-7738-44b2-b632-e3503cae63f6.png">
 Se escogió un histograma, ya que con este gráfico se puede ver de forma inicial la forma en la cual se distribuyen los datos; se observa que los datos tienen un gran sesgo a la derecha, lo cual significa que la mayoría del tiempo el inversor tuvo una potencia baja y puede que hayan algunos datos outliers dentro de la data.
 <h3 class="plot-title">BoxPlot Potencia del Inversor</h3>
-<img src="https://user-images.githubusercontent.com/128309088/235487927-e6ec3c6a-3095-4eea-8169-df16372119f3.png">
+<img src="https://user-images.githubusercontent.com/128309088/235493368-2a23d1cf-1560-49c3-877f-b690d0f6ab9e.png">
 Para validar la hipotesis anterior sobre los outliers se realiza un BoxPlot el cual tiene la caracteritica de mostrar los puntos considerados outliers dentro de la distribucion.
 <br><br />
 En el gráfico se observa que a pesar de tener un cúmulo de datos en valores bajos, los valores altos no alcanzan a ser outliers, por lo que la data no tiene outliers y todos los puntos tienen una distribución esperada.
 <h3 class="plot-title">Serie (Minutal) Potencia del Inversor</h3>
-<img src="https://user-images.githubusercontent.com/128309088/235488346-33107c9e-4bc0-44b0-8a3f-71e47765710d.png">
+<img src="https://user-images.githubusercontent.com/128309088/235493426-721f0d17-3aa6-4925-abd0-06d96472c29c.png">
 La data que se tiene esta medida minutalmente, es decir, cada instancia del DataSet representa una medición de la potencia del inversor minuto a minuto, por lo que el gráfico de serie inicialmente no se ve muy bien, pero a pesar de esto en él se puede observar que la potencia tiene caídas grandes repentinas y luego subidas, lo cual es un comportamiento extraño que se debe estudiar más a fondo.
 <br><br />
+<h3 class="plot-title">Serie (Diaria) Potencia del Inversor</h3>
 
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRIcGbQiSIM9asdg0eaNSYQNQap02dmcnrQ5KIhW8GJVDaKB_7R_cNqxQ5QvZtm1K-O8sG3IdO5L4cs/pubchart?oid=530216147&format=interactive"></iframe>
+Para poder observar mejor el comportamiento de la serie, dentro del código de Python anterior se convirtió la serie en una diaria, promediando la potencia de cada minuto del día.
+<br><br />
+
+Así, se puede incorporar esta data a una herramienta distinta, en este caso Excel, se escogió está por la facilidad que brinda para realizar varios gráficos cuando la cantidad de datos no es tan grande (nuestro caso).<br><br />
+
+Se observa que también hay una gran inconsistencia en la potencia del inversor día a día, se tienen caídas y subidas muy bruscas de la información. En conclusión, la potencia del inversor no es una variable que tenga un comportamiento natural, podríamos pensar que la serie es estacionaria al ver que se compone de ruido blanco.
+<br><br />
 <h4 class="main-fuente">Fuente de los datos: </h4>
 
 La data fue suministrada por la empresa que requiere el desarrollo del TFM, estos datos son obtenidos por cada uno de los inversores solares que tiene el cliente de la empresa.
